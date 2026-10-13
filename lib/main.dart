@@ -417,7 +417,7 @@ class CalcButton extends StatelessWidget {
           color: bg,
           borderRadius: BorderRadius.circular(20),
           clipBehavior: Clip.antiAlias,
-          child: GestureDetector(
+          child: InkWell(
             onTap: spec.onTap,
             child: Center(
                 child: Padding(
