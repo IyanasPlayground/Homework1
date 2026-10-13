@@ -1,3 +1,5 @@
+//iyana Halliburton
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -23,7 +25,7 @@ class Calc {
   } 
 
   static String symbol(String o) {
-    if (o == '*') return '×';
+    if (o == 'x') return '×';
     if (o == '/') return '÷';
     if (o == '-') return '−';
     return o;
@@ -135,7 +137,7 @@ class Calc {
       case '-':
         result = a - b;
         break;
-      case '*':
+      case 'x':
         result = a * b;
         break;
       default:
@@ -271,7 +273,7 @@ class _CalcPageState extends State<CalcPage> {
         Operate('±', 'Toggle positive negative', () => _do(calc.toggleSign),
             OpKind.action),
         _op('/', 'Divide'),
-        _op('*', 'Multiply'),
+        _op('x', 'Multiply'),
       ],
       [_digit('7'), _digit('8'), _digit('9'), _op('-', 'Subtract')],
       [_digit('4'), _digit('5'), _digit('6'), _op('+', 'Add')],
